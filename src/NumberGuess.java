@@ -5,6 +5,7 @@ public class NumberGuess {
         int menuRun = 1;
         Scanner scan = new Scanner(System.in);
         while (menuRun == 1) {
+            // start menu
             System.out.print("\033[H\033[2J");
             System.out.flush();
             System.out.println("Start game? (y/n)");
@@ -23,6 +24,7 @@ public class NumberGuess {
         int trueNumber = (int) (Math.random() * 100);
         int gameRun = 1;
         while (gameRun == 1) {
+            // start game
             int guessNumber = scan.nextInt();
 
             if (guessNumber == trueNumber) {
